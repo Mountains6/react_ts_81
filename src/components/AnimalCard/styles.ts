@@ -1,4 +1,6 @@
-.animal-card-wrapper {
+import styled from "@emotion/styled";
+
+export const MyAnimalCard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,8 +11,8 @@
   color: rgb(248, 250, 250);
   border-radius: 12px;
   font-size: 24px;
-}
 
-.animal-card-wrapper > img {
-  width: 200px;
-}
+  img {
+    width: 200px;
+  }
+`;

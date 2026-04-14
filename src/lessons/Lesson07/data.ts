@@ -2,7 +2,7 @@ import type { AnimalData } from "./types";
 
 export const animalData: AnimalData[] = [
   {
-    id: 1,
+    // id: 1,
     name: "Alex",
     species: "Lion",
     role: "Main Character",
@@ -12,7 +12,7 @@ export const animalData: AnimalData[] = [
   },
   
   {
-    id: 2,
+    // id: 2,
     name: "Marty",
     species: "Zebra",
     role: "Best Friend",
@@ -22,7 +22,7 @@ export const animalData: AnimalData[] = [
   },
 
   {
-    id: 3,
+    // id: 3,
     name: "Gloria",
     species: "Hippo",
     role: "Kind-hearted",
@@ -32,7 +32,7 @@ export const animalData: AnimalData[] = [
   },
 
   {
-    id: 4,
+    // id: 4,
     name: "Melman",
     species: "Giraffe",
     role: "Hypochondriac",

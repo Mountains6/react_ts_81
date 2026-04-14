@@ -1,12 +1,11 @@
-import "./styles.css";
 import type { ButtonProps } from "./types.tsx";
+import { MyButton } from "./styles.ts";
 
-function Button({ name, type = "button", onButtonClick}: ButtonProps) {
-
+function Button({ name, type = "button", onButtonClick }: ButtonProps) {
   return (
-    <button className="my-button" type={type} onClick={onButtonClick}>
+    <MyButton type={type} onClick={onButtonClick}>
       {name}
-    </button>
+    </MyButton>
   );
 }
 
