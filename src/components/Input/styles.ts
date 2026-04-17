@@ -8,17 +8,17 @@ export const InputComponent = styled.div`
 
 export const Label = styled.label`
   font-size: 18px;
-  color: rgb(48, 21, 109);
+  color: rgb(255, 255, 255);
 `;
 
 export const InputElement = styled.input`
  width: 100%;
  padding: 12px;
- border: 2px solid rgb(48, 21, 109);
+ border: 2px solid rgb(15, 46, 17);
  border-radius: 8px;
  font-size: 18px;
  outline: none;
  &::placeholder {
-   color: rgb(121, 84, 206);
+   color: rgb(0, 0, 0);
  }
 `;

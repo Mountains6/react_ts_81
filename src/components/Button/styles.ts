@@ -9,8 +9,8 @@ export const MyButton = styled.button<MyButtonProps>`
   /* Потом можно удалить */
   height: 100px;
   padding: 20px;
-    background-color: ${({ $isDanger }) =>
-    $isDanger ? "rgb(116, 29, 32)" : "rgb(116, 29, 80)"};
+  background-color: ${({ $isDanger }) =>
+    $isDanger ? "rgb(116, 29, 32)" : "rgb(144, 64, 110)"};
   color: #fff;
   font-size: 24px;
   font-weight: bold;
@@ -19,6 +19,6 @@ export const MyButton = styled.button<MyButtonProps>`
   cursor: pointer;
 
   &:hover {
-    background-color: #270c20;
+    background-color: #173d1e;
   }
 `;

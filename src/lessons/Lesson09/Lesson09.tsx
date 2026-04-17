@@ -12,7 +12,7 @@ function Lesson09() {
 
   const onSendClick = () => {
     setResultValue(exampleValue)
-  }
+  };
 
   const onInputChange = (event: ChangeEvent<HTMLInputElement>) => {
     setExampleValue(event.target.value.toUpperCase());
