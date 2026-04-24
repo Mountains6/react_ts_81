@@ -1,5 +1,6 @@
 import { v4 } from "uuid";
 import { useNavigate } from "react-router-dom";
+import { createContext, useState } from "react";
 
 import NavigationLink from "../NavigationLink/NavigationLink";
 import { navLinkData } from "./data";
@@ -15,7 +16,12 @@ import {
 } from "./styles";
 import type { LayoutProps, NavLinkObject } from "./types";
 
+export const LayoutComponentContext = createContext<string | undefined>(undefined);
+
 function Layout({ children }: LayoutProps) {
+    const [name, setName] = useState<string | undefined>("Yana");
+
+// export const MainCardContext = createContext<UserData | undefined>(undefined);
   // useNavigate - это хук из библиотеки react-router-dom. При вызове он
   // возвращает функцию, которую мы сохраняем в переменную и при вызове этой функции
   // мы можем передать путь и произойдет редирект
@@ -35,6 +41,7 @@ function Layout({ children }: LayoutProps) {
   });
 
   return (
+    <LayoutComponentContext.Provider value={name}>
     <LayoutComponent>
       <Header>
         <LogoContainer>
@@ -48,6 +55,7 @@ function Layout({ children }: LayoutProps) {
         <Logo onClick={goToHomePage}>81</Logo>
       </Footer>
     </LayoutComponent>
+    </LayoutComponentContext.Provider>
   );
 }
 

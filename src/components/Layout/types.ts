@@ -8,3 +8,7 @@ export interface NavLinkObject {
     to: string;
     linkName: string;
 }
+
+export interface NameData {
+    name: string;
+}

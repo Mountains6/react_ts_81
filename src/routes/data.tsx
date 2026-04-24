@@ -9,6 +9,7 @@ import Lesson08 from "../lessons/Lesson08/Lesson08";
 import Lesson09 from "../lessons/Lesson09/Lesson09";
 import Lesson10 from "../lessons/Lesson10/Lesson10";
 import Lesson11 from "../lessons/Lesson11/Lesson11";
+import Lesson15 from "../lessons/Lesson15/Lesson15";
 
 export const routesData: RouteObj[] = [
   { path: "/", element: <Home /> },
@@ -20,5 +21,7 @@ export const routesData: RouteObj[] = [
   { path: "lesson09", element: <Lesson09 /> },
   { path: "lesson10", element: <Lesson10 /> },
   { path: "lesson11", element: <Lesson11 /> },
+  { path: "lesson15", element: <Lesson15 /> },
+
   { path: "*", element: <PageNotFound /> },
 ];
